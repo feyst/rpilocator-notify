@@ -10,4 +10,4 @@ cp .env.example .env
 vim .env
 docker compose up -d
 ```
-The script will check availability every 5 minutes.
+The script will check availability on [rpilocator.com](https://rpilocator.com/) every 5 minutes.
