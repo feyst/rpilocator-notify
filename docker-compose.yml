@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  rpilocator:
+    build: .
+    image: feyst/rpilocator_notify
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    environment:
+      WHATSAPP_PHONE: ${WHATSAPP_PHONE}
+      WHATSAPP_API_KEY: ${WHATSAPP_API_KEY}
+      PI_CATEGORY: ${PI_CATEGORY}
+      LC_ALL: ${LC_ALL:-en_US}
+      TZ: ${TZ:-Europe/Amsterdam}

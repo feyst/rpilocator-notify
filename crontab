@@ -1,0 +1,2 @@
+# min   hour    day     month   weekday command
+  *     *       *       *       *       php /app/RpiLocator.php > /proc/1/fd/1 2>/proc/1/fd/2
